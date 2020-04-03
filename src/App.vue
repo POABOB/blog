@@ -8,7 +8,7 @@
             <i class="iconfont icon-location"></i>
           </div>
           <div class="navs flex">
-            <a class="nav-item nav-home flex flex-middle flex-center" href="https://chenjiahao.xyz" rel="noopener noreferer">
+            <a class="nav-item nav-home flex flex-middle flex-center" href="http://poabob.github.io/" rel="noopener noreferer">
               <span>盒子</span>
               <i class="iconfont icon-home"></i>
             </a>
@@ -45,10 +45,10 @@
         <transition name="slide-down">
           <div class="cont" v-if="global.showModal">
             <div class="top flex flex-center flex-middle">
-              <a class="close flex flex-middle flex-center" href="javascript:;" @click="toggleModal">Close</a>
+              <a class="close flex flex-middle flex-center" href="javascript:;" @click="toggleModal">關閉</a>
             </div>
             <div class="navs flex flex-center flex-middle">
-              <a class="nav-item nav-home flex flex-middle flex-center" href="https://chenjiahao.xyz" rel="noopener noreferer">
+              <a class="nav-item nav-home flex flex-middle flex-center" href="http://poabob.github.io/" rel="noopener noreferer">
                 <i class="iconfont icon-home"></i>
               </a>
               <a class="nav-item flex flex-middle flex-center" href="javascript:;" v-for="(nav, index) in navs" :key="index" @click="clickNav(nav.path)">
@@ -79,22 +79,22 @@ export default {
   setup(props, context) {
     const navs = [{
       path: '/archives',
-      name: 'Blog',
+      name: '網誌',
     }, {
       path: '/labels',
-      name: 'Tags',
+      name: '標籤',
     }, {
       path: '/links',
-      name: 'Links',
+      name: '連結',
     }, {
       path: '/about',
-      name: 'About',
+      name: '關於',
     }, {
       path: '/board',
-      name: 'Comments',
+      name: '留言',
     }, {
       path: '/search',
-      name: 'Search',
+      name: '搜索',
     },
     // {
     //   path: '/subscribe',
