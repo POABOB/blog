@@ -21,5 +21,5 @@
 
 ## 📝 MIT License
 
-Copyright © 2019 [POABOB](https://github.com/POABOB).<br />
+Copyright © 2020 [POABOB](https://github.com/POABOB).<br />
 This project is [MIT](https://github.com/POABOB/blog/blob/master/LICENSE) licensed.
