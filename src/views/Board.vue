@@ -10,7 +10,7 @@ import {
 
 export default {
   setup(props, context) {
-    context.root.$loading.show('努力为您查询');
+    context.root.$loading.show('查詢中');
 
     const initBoard = () => {
       const utterances = document.createElement('script');
@@ -19,7 +19,7 @@ export default {
       utterances.setAttribute('issue-term', '【留言板】');
       utterances.setAttribute('label', ':speech_balloon:');
       utterances.setAttribute('theme', 'github-light');
-      utterances.setAttribute('repo', 'ChenJiaH/chenjiah.github.io');
+      utterances.setAttribute('repo', 'POABOB/poabob.github.io');
       utterances.crossorigin = 'anonymous';
       utterances.src = 'https://utteranc.es/client.js';
 

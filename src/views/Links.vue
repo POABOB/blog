@@ -17,7 +17,7 @@
       <span class="flex flex-middle flex-center">
         <i class="iconfont icon-mail"></i>
       </span>
-      <p>交换友链可以邮件 chenjiahao.xyz@gmail.com</p>
+      <p>想要交換連結可以mail zxc752166@gmail.com</p>
     </div>
   </div>
 </template>
@@ -30,6 +30,11 @@ export default {
         bio: 'Find the bug of the world',
         name: 'Forsigner',
         url: 'http://forsigner.com',
+      }, {
+        avatar: 'https://chenjiahao.xyz/blog/img/avatar.png',
+        bio: 'No pain, no gains!',
+        name: 'McChen',
+        url: 'https://chenjiahao.xyz/',
       }],
     };
   },

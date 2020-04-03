@@ -26,9 +26,9 @@ export default {
     });
     const { id } = context.root.$route.params;
     const getData = () => {
-      context.root.$loading.show('努力为您查询');
+      context.root.$loading.show('查詢中');
       const query = `query {
-          repository(owner: "ChenJiaH", name: "blog") {
+          repository(owner: "POABOB", name: "blog") {
             issue(number: ${id}) {
               title
               bodyHTML

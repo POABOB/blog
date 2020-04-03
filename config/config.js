@@ -5,6 +5,6 @@
  */
 
 export default {
-  tokenA: '3fea5315abc8c04666ab',
-  tokenB: '431c23a9cf7de75e77de',
+  tokenA: '95f38584a052fd85edf9',
+  tokenB: '7bab13b7e4c0ceb6da45',
 };

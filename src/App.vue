@@ -24,8 +24,8 @@
             <img src="img/avatar.png" alt="">
           </a>
           <div class="flex-item">
-            <h3 class="font-clg">McChen</h3>
-            <p>No pain, no gains!</p>
+            <h3 class="font-clg">POABOB</h3>
+            <p>Life is but a span!</p>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
         <transition name="slide-down">
           <div class="cont" v-if="global.showModal">
             <div class="top flex flex-center flex-middle">
-              <a class="close flex flex-middle flex-center" href="javascript:;" @click="toggleModal">关闭</a>
+              <a class="close flex flex-middle flex-center" href="javascript:;" @click="toggleModal">Close</a>
             </div>
             <div class="navs flex flex-center flex-middle">
               <a class="nav-item nav-home flex flex-middle flex-center" href="https://chenjiahao.xyz" rel="noopener noreferer">
@@ -79,26 +79,28 @@ export default {
   setup(props, context) {
     const navs = [{
       path: '/archives',
-      name: '博客',
+      name: 'Blog',
     }, {
       path: '/labels',
-      name: '标签',
+      name: 'Tags',
     }, {
       path: '/links',
-      name: '友链',
+      name: 'Links',
     }, {
       path: '/about',
-      name: '关于',
+      name: 'About',
     }, {
       path: '/board',
-      name: '留言',
+      name: 'Comments',
     }, {
       path: '/search',
-      name: '搜索',
-    }, {
-      path: '/subscribe',
-      name: '订阅',
-    }];
+      name: 'Search',
+    },
+    // {
+    //   path: '/subscribe',
+    //   name: 'Subscribe',
+    // }
+    ];
 
     const global = reactive({
       mode: ref(''),

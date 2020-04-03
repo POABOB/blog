@@ -5,7 +5,7 @@
       <input class="flex-item" type="text" placeholder="search" v-model="search" @input="onInput"/>
     </div>
     <div class="tips" v-if="archives.totalCount">
-      <p v-text="`共 ${archives.totalCount} 条搜索结果`"></p>
+      <p v-text="`共 ${archives.totalCount} 條搜索結果`"></p>
     </div>
     <ul class="archives">
       <li class="archive" v-for="archive in archives.list" :key="archive.number">
@@ -15,18 +15,18 @@
     </ul>
     <div class="auxi flex flex-middle flex-center" v-if="archives.none">
       <i class="iconfont icon-none"></i>
-      <span>目前就这么多啦~</span>
+      <span>目前只有這些唷~</span>
     </div>
     <template v-else>
       <template v-if="archives.loading">
         <div class="auxi flex flex-middle flex-center">
           <i class="iconfont icon-loading"></i>
-          <span>正在加载中</span>
+          <span>正在載入中</span>
         </div>
       </template>
       <template v-else>
         <div class="flex flex-middle flex-center" v-if="archives.totalCount">
-          <a class="btn-next flex flex-middle flex-center" href="javascript:;" @click="getData">加载更多</a>
+          <a class="btn-next flex flex-middle flex-center" href="javascript:;" @click="getData">載入更多</a>
         </div>
       </template>
     </template>
@@ -55,7 +55,7 @@ export default {
     const getData = () => {
       archives.loading = true;
       const query = `query {
-        search(query: "${search.value} repo:ChenJiaH/blog", type: ISSUE, first: 10, after: ${archives.cursor}) {
+        search(query: "${search.value} repo:POABOB/blog", type: ISSUE, first: 10, after: ${archives.cursor}) {
           issueCount
           pageInfo {
             endCursor

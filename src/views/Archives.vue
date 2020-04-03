@@ -20,18 +20,18 @@
     </div>
     <div class="auxi flex flex-middle flex-center" v-if="archives.none">
       <i class="iconfont icon-none"></i>
-      <span>目前就这么多啦~</span>
+      <span>目前只有這些唷~</span>
     </div>
     <template v-else>
       <template v-if="archives.loading">
         <div class="auxi flex flex-middle flex-center">
           <i class="iconfont icon-loading"></i>
-          <span>正在加载中</span>
+          <span>正在載入中</span>
         </div>
       </template>
       <template v-else>
         <div class="flex flex-middle flex-center">
-          <a class="btn-next flex flex-middle flex-center" href="javascript:;" @click="getData">加载更多</a>
+          <a class="btn-next flex flex-middle flex-center" href="javascript:;" @click="getData">載入更多</a>
         </div>
       </template>
     </template>
@@ -58,7 +58,7 @@ export default {
     const getData = () => {
       archives.loading = true;
       const query = `query {
-          repository(owner: "ChenJiaH", name: "blog") {
+          repository(owner: "POABOB", name: "blog") {
             issues(orderBy: {field: CREATED_AT, direction: DESC}, labels: null, first: 10, after: ${archives.cursor}) {
               nodes {
                 title
